@@ -12,7 +12,7 @@ node {
     }
 
     stage('Push image') {
-            /* Finally, we'll push the image into Docker Hub */
+            /* Push the image into Docker Hub */
     		docker.withRegistry('https://registry.hub.docker.com', 'docker-hub-credentials') {
 
     			/* We'll push the image with two tags:
