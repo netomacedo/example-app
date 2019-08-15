@@ -1,6 +1,7 @@
 node {
     def app
 
+    agent any
     triggers {
         cron('H */1 * * 1-7')
     }
