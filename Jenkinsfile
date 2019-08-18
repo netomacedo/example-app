@@ -1,11 +1,6 @@
 node {
     def app
 
-    agent any
-    triggers {
-        cron('H */1 * * 1-7')
-    }
-
     stage('Clone Git repository') {
         /* Let's make sure we have the repository cloned to our workspace */
         checkout scm
